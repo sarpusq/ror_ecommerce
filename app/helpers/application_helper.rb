@@ -23,6 +23,15 @@ EXAMPLE USAGE!!
     I18n.t(:company)
   end
 
+
+  def about_description
+    I18n.t(:about)
+  end
+
+  def terms_and_cond_description
+    I18n.t(:terms_and_conditions)
+  end
+
   def remove_child_link(name, f)
     f.hidden_field(:_destroy) + link_to(name, "javascript:void(0)", :class => "remove_child")
   end
