@@ -1,19 +1,25 @@
 # SQLite version 3.x
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  username: root
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: de1lsqu7mn6f6v
+  username: xkmwlicfxhiaob
+  password: 53ebcbf70c103ef96ba77c91f062bd195124a11edcb9f6fa9f201914eb57d332
+  host: ec2-174-129-224-33.compute-1.amazonaws.com
+  port: 5432
+
+
 
 ## Replace with mysql
 production:
-    adapter: sqlite3
-    database: db/development.sqlite3
-    username: root
-    pool: 5
-    timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: de1lsqu7mn6f6v
+  username: xkmwlicfxhiaob
+  password: 53ebcbf70c103ef96ba77c91f062bd195124a11edcb9f6fa9f201914eb57d332
+  host: ec2-174-129-224-33.compute-1.amazonaws.com
+  port: 5432
 
 ## Warning: The database defined as "test" will be erased and
 ## re-generated from your development database when you run "rake".
