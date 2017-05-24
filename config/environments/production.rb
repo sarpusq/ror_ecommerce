@@ -133,22 +133,8 @@ Hadean::Application.configure do
       :password => Settings.authnet.password,
       :test     => true
     )
-    Paperclip::Attachment.default_options[:storage] = :s3
-    #::GATEWAY = ActiveMerchant::Billing::BraintreeGateway.new(
-    #  :login     => Settings.braintree.login,
-    #  :password  => Settings.braintree.password
-    #)
-  end
 
-  config.paperclip_defaults = {
-    storage: :s3,
-    s3_credentials: {
-      bucket:            ENV.fetch('S3_BUCKET_NAME'),
-      access_key_id:     ENV.fetch('AWS_ACCESS_KEY_ID'),
-      secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
-      s3_region:         ENV.fetch('AWS_REGION') # You may need to state the s3 host_name if other than US standard:
-    }
-  }
+  end
 
   PAPERCLIP_STORAGE_OPTS = {  styles: { :mini     => '48x48>',
                                         :small    => '100x100>',
