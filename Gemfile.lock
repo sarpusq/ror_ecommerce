@@ -319,6 +319,9 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
     pdf-core (0.6.1)
+    pg (0.20.0)
+    postgresql (1.0.0)
+      pg
     prawn (2.1.0)
       pdf-core (~> 0.6.1)
       ttfunk (~> 1.4.0)
@@ -469,6 +472,7 @@ DEPENDENCIES
   mysql2 (~> 0.4.4)
   nokogiri (~> 1.6.5)
   paperclip (~> 5.0.0)
+  postgresql
   prawn (>= 0.12.0)
   railroady
   rails (~> 5.0.0)

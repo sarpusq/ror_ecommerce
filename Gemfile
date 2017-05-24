@@ -60,7 +60,7 @@ gem 'aasm',            '~> 4.0.3'
 gem 'will_paginate',   '~> 3.1.0'
 # gem 'zurb-foundation', '~> 4.3.2'
 gem 'foundation-rails', '6.2.3.0'
-gem 'sqlite3'
+gem 'postgresql'
 
 group :production do
   # gem 'mysql2', '~> 0.4.4'
@@ -69,7 +69,6 @@ group :production do
 end
 
 group :development do
-  # gem 'sqlite3'
   gem 'railroady'
   #gem 'awesome_print'
   #gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
@@ -83,6 +82,7 @@ group :development do
   gem 'RedCloth'
 end
 group :test, :development do
+  gem 'sqlite3'
   gem 'byebug'
   gem 'mysql2',   '~> 0.4.4'
   gem 'capybara', '~> 2.7.1'
