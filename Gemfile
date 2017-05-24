@@ -20,7 +20,6 @@ gem 'authlogic',   '~> 3.5.0'
 
 #gem 'scrypt', '~> 2.0.0'
 
-gem "asset_sync",         '~> 1.2.1'
 gem 'awesome_nested_set', '~> 3.1.1'
 
 gem 'aws-sdk',        '~> 2.3.21'
