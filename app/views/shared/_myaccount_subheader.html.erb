@@ -9,8 +9,6 @@
     <ul  class=" menu vertical ">
       <li <%= selected_myaccount_tab('address') ? 'class=active' : '' %>>
         <%= link_to 'Addresses', myaccount_addresses_path() %></li>
-      <li <%= selected_myaccount_tab('credit_cards') ? 'class=active' : '' %>>
-        <%= link_to 'Credit Cards', myaccount_credit_cards_path() %></li>
       <li <%= selected_myaccount_tab('orders') ? 'class=active' : '' %>>
         <%= link_to 'Orders', myaccount_orders_path() %>
       </li>
